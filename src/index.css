@@ -10,7 +10,6 @@
   --color-grey-500: hsl(0, 1%, 44%);
   --color-black: hsl(0, 0%, 0%);
   --font-poppins: "Poppins", sans-serif;
-  --text-big: 32px;
 }
 
 label {
@@ -18,17 +17,17 @@ label {
 }
 
 .label {
-  @apply flex flex-col w-[125px] gap-2;
+  @apply flex flex-col w-24 md:w-31.25 gap-2;
 }
 
 @layer base {
   input {
-    @apply border-grey-500 border rounded p-2 pe-0 text-2xl font-bold text-black duration-300 outline-none placeholder:text-grey-500 hover:border-primary;
+    @apply border-grey-500 border rounded p-2 pe-0 md:text-2xl font-bold text-black duration-300 outline-none placeholder:text-grey-500 hover:border-primary;
   }
 }
 
 .output {
-  @apply text-6xl text-black font-bold italic;
+  @apply text-5xl lg:text-6xl text-black font-bold italic;
 }
 
 .output span {

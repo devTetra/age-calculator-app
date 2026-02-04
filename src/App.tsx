@@ -115,14 +115,14 @@ function App() {
 
   return (
     <>
-      <main className="font-poppins w-screen h-screen bg-grey-200 flex items-center justify-center">
-        <div className="flex flex-col items-start w-150 rounded-xl rounded-br-[150px] bg-grey-100 p-8 gap-4">
-          <div className="flex pl-0 relative pt-4 pr-20 pb-10  border-b-2 gap-3 border-grey-200 ">
+      <main className="font-poppins w-screen h-screen lg:p-0 p-3 bg-grey-200 flex items-center justify-center">
+        <div className="flex flex-col items-start w-125 lg:w-150 rounded-xl rounded-br-[100px] bg-grey-100 p-4 md:p-8 gap-4">
+          <div className="flex relative md:pt-4 pt-2 lg:pr-20 pb-10 md:pb-12  border-b-2 gap-3 border-grey-200 ">
             <button
-              className="bg-primary hover:bg-black cursor-pointer duration-300 rounded-full flex items-center p-5 absolute -bottom-8 -right-8 justify-center"
+              className="bg-primary hover:bg-black cursor-pointer duration-300 rounded-full flex items-center p-5 absolute -bottom-8 lg:-right-8 left-5/12 lg:left-auto justify-center"
               onClick={(e) => handleSubmit(e)}
             >
-              <img src={arrowIcon} alt="" className="w-8 h-8" />
+              <img src={arrowIcon} alt="" className="lg:w-8 lg:h-8 w-4 h-4" />
             </button>
             <div className="label">
               <label
@@ -178,7 +178,7 @@ function App() {
               {errorStates.year && <p className="error">{errorStates.year}</p>}
             </div>
           </div>
-          <div className="flex flex-col py-6">
+          <div className="flex flex-col py-6 pt-10 lg:pt-6">
             <p className="output">
               {age.years ? <span>{age.years}</span> : <span>--</span>}
               years
